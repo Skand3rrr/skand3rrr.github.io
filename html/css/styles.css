@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.main {
+    text-align: center;
+}
+
+.main a {
+    color: lightblue;
+}
