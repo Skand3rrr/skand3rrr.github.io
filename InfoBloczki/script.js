@@ -1,6 +1,6 @@
 let json
 
-fetch("questions.json")
+fetch("./questions.json")
     .then(response => response.json())
     .then(data => json = data)
 
