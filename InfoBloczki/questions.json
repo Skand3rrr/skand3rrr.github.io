@@ -1,0 +1,34 @@
+{
+  "0": {
+    "question": "Na licencji ADWARE jest rozpowszechniane oprogramowanie",
+    "A": "Darmowe, ale z reklamami",
+    "B": "Płatne, ale z reklamami",
+    "C": "Darmowe, bez reklam",
+    "D": "Płatne, bez reklamami",
+    "answer": "A"
+  },
+  "1": {
+    "question": "RGB oznacza:",
+    "A": "Raster Green Blue",
+    "B": "Red Green Brown",
+    "C": "Red Green Blue",
+    "D": "Red Grass Blue",
+    "answer": "C"
+  },
+  "2": {
+    "question": "1024 MB to:",
+    "A": "1 KB",
+    "B": "1 KG",
+    "C": "1 GB",
+    "D": "1 TB",
+    "answer": "C"
+  },
+  "3": {
+    "question": "Który z systemów liczbowych o danej podstawie ma w sobie litery",
+    "A": "*",
+    "B": "16",
+    "C": "10",
+    "D": "2",
+    "answer": "B"
+  }
+}
