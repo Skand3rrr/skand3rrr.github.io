@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("keydown", (e) => {
         if((e.key==" " || e.code=="Space") && !running) {
+            answering = false
             running = true;
             board.forEach((row) => row.fill(0))
             score = 0
