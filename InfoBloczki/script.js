@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const grid=30;
     const rows = canvas.height/grid;
     const columns = canvas.width/grid;
-    const board = Array.from({length:rows}, () => Array(columns).fill(0))
+    let board = Array.from({length:rows}, () => Array(columns).fill(0))
     let running = false;
     let timerId;
     let score = 0
