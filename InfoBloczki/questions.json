@@ -1,18 +1,18 @@
 {
   "0": {
-    "question": "Na licencji ADWARE jest rozpowszechniane oprogramowanie",
-    "A": "Darmowe, ale z reklamami",
-    "B": "Płatne, ale z reklamami",
-    "C": "Darmowe, bez reklam",
-    "D": "Płatne, bez reklamami",
+    "question": "Jaka część komputera jest odpowiedzialna za wyświetlanie obrazów",
+    "A": "Karta Graficzna",
+    "B": "RAM",
+    "C": "SSD",
+    "D": "Dysk twardy",
     "answer": "A"
   },
   "1": {
-    "question": "RGB oznacza:",
-    "A": "Raster Green Blue",
-    "B": "Red Green Brown",
-    "C": "Red Green Blue",
-    "D": "Red Grass Blue",
+    "question": "Po jakim zwierzęciu jest nazwany pewien język programowania którego nazwa zaczyna się na P",
+    "A": "Po ptaku",
+    "B": "Po niedźwiedziu",
+    "C": "Po wężu",
+    "D": "Po wilku",
     "answer": "C"
   },
   "2": {
@@ -24,11 +24,11 @@
     "answer": "C"
   },
   "3": {
-    "question": "Który z systemów liczbowych o danej podstawie ma w sobie litery",
-    "A": "8",
-    "B": "16",
-    "C": "10",
-    "D": "2",
+    "question": "Jaki blok w Scratchu odpowiada za ruch?",
+    "A": "Speak",
+    "B": "Move x steps",
+    "C": "Play sound",
+    "D": "Change character",
     "answer": "B"
   }
 }
