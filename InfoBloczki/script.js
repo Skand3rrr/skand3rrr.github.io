@@ -166,21 +166,6 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     };
 
-    function blockDetection(block,offsetX, offsetY) {
-        return block.some((row, y) => {
-            return row.some((value, x) => {
-                if(value){
-                    const newX= x + offsetX
-                    const newY = y + offsetY
-                    return (
-                        board[newY][newX]
-                    )
-                }
-                return false
-            })
-        })
-    };
-
     document.addEventListener("keydown", (e) => {
         if (running){
             if (e.key == "ArrowLeft"){
@@ -251,16 +236,21 @@ document.addEventListener("DOMContentLoaded", () => {
         if(!collisionDetection(currentBlock.shape, currentBlock.x, currentBlock.y + 1) && !answering) {
             currentBlock.y += 1
         } else {
-            if (blockDetection(currentBlock.shape, currentBlock.x, currentBlock.y)) {
+            if (collisionDetection(currentBlock.shape, currentBlock.x, currentBlock.y)) {
                 running = false;
-                if (score > hs.score) {
+                if (hs != null) {
+                    if (score > hs.score) {
+                        can_restart = false
+                        getScore();
+                    }
+                } else {
                     can_restart = false
                     getScore();
                 }
                 clearInterval(timerId)
                 displayMessage("GAME OVER")
+                giveQuestion();
             }
-            giveQuestion();
         }
     }
 
