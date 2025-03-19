@@ -249,8 +249,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 clearInterval(timerId)
                 displayMessage("GAME OVER")
-                giveQuestion();
             }
+            giveQuestion();
         }
     }
 
