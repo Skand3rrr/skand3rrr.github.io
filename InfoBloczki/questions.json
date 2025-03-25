@@ -30,5 +30,29 @@
     "C": "Play sound",
     "D": "Change character",
     "answer": "B"
+  },
+  "4": {
+    "question": "LICZ.JEŻELI w Excelu zwraca",
+    "A": "Dodane liczby",
+    "B": "Liczbę komórek we wskazanym zakresie",
+    "C": "Liczbę komórek we wskazanym zakresie niespełniających podane kryteria",
+    "D": "Liczbę komórek we wskazanym zakresie spełniających podane kryteria",
+    "answer": "D"
+  },
+  "5": {
+    "question": "MOD w Excelu zwraca",
+    "A": "Dodane liczby",
+    "B": "Resztę podzielonej liczby",
+    "C": "Odjęte liczby",
+    "D": "Liczby spotęgowane",
+    "answer": "B"
+  },
+  "6": {
+    "question": "Czym jest element <a></a>?",
+    "A": "Pogrubionym tekstem",
+    "B": "Zdięciem",
+    "C": "Polem do pisania",
+    "D": "Hiperlinkem",
+    "answer": "D"
   }
 }
