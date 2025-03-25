@@ -123,6 +123,14 @@ document.addEventListener("DOMContentLoaded", () => {
         ctx.fillStyle=color;
         ctx.fillRect(x*grid, y*grid, grid, grid);
         ctx.strokeStyle = "#333";
+        ctx.shadowColor = '#000';
+        for(var i=0;i<3;i++){
+            for(var j=0;j<3;j++){
+                ctx.shadowBlur=6+i;
+                ctx.lineWidth=0.50;
+                ctx.stroke();
+            }
+        }
         ctx.strokeRect = (x*grid, y*grid, grid, grid);
     }
 
