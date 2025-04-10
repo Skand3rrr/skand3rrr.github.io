@@ -48,11 +48,35 @@
     "answer": "B"
   },
   "6": {
-    "question": "Czym jest element <a>?",
+    "question": "Czym jest element a w html?",
     "A": "Pogrubionym tekstem",
     "B": "Zdięciem",
     "C": "Polem do pisania",
     "D": "Hiperlinkem",
     "answer": "D"
+  },
+  "7": {
+    "question": "Czym jest element b w html?",
+    "A": "Pogrubionym tekstem",
+    "B": "Zdięciem",
+    "C": "Polem do pisania",
+    "D": "Hiperlinkem",
+    "answer": "A"
+  },
+  "8": {
+    "question": "Czym drukujemy wiadomości w pythonie?",
+    "A": "def",
+    "B": "return",
+    "C": "print()",
+    "D": "class",
+    "answer": "C"
+  },
+  "9": {
+    "question": "Czym zwracamy zmienne z funkcji w pythonie?",
+    "A": "print()",
+    "B": "return",
+    "C": "def",
+    "D": "class",
+    "answer": "B"
   }
 }
