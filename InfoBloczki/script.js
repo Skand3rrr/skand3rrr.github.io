@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             })
         })
-        checkLines()
+        giveQuestion()
     }
 
     function checkLines() {
@@ -258,7 +258,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 clearInterval(timerId)
                 displayMessage("GAME OVER")
             }
-            giveQuestion();
+            mergeBlocks()
         }
     }
 
