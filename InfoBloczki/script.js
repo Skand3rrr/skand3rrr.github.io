@@ -286,35 +286,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
         A.onclick = function() {
             if (answer == "A") {
-                mergeBlocks()
-                newBlock()
-                answering = false;
-                document.getElementById("questionbox").hidden = true
+                Correct()
+            } else {
+                Wrong()
             }
         }
         B.onclick = function() {
             if (answer == "B") {
-                mergeBlocks()
-                newBlock()
-                answering = false;
-                document.getElementById("questionbox").hidden = true
+                Correct()
+            } else {
+                Wrong()
             }
         }
         C.onclick = function() {
             if (answer == "C") {
-                mergeBlocks()
-                newBlock()
-                answering = false;
-                document.getElementById("questionbox").hidden = true
+                Correct()
+            } else {
+                Wrong()
             }
         }
         D.onclick = function() {
             if (answer == "D") {
-                mergeBlocks()
-                newBlock()
-                answering = false;
-                document.getElementById("questionbox").hidden = true
+                Correct()
+            } else {
+                Wrong()
             }
         }
+    }
+
+    function Correct() {
+        mergeBlocks()
+        checkLines()
+        answering = false;
+        document.getElementById("questionbox").hidden = true
+    }
+    function Wrong() {
+        answering = false;
+        document.getElementById("questionbox").hidden = true
     }
 });
