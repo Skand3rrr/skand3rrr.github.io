@@ -274,7 +274,6 @@ document.addEventListener("DOMContentLoaded", () => {
         let D = document.getElementById("d")
 
        let num = Math.floor(Math.random() * (Object.keys(json).length - 0))
-       console.log(num)
 
         A.innerHTML = json[num].A
         B.innerHTML = json[num].B
