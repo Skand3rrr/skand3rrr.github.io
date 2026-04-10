@@ -315,7 +315,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function Correct() {
-        mergeBlocks()
         checkLines()
         answering = false;
         document.getElementById("questionbox").hidden = true
