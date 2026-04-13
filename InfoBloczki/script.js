@@ -106,6 +106,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  function getScore() {
+    canvas.hidden = true
+    document.getElementById("highscore").hidden = false
+
+    document.getElementById("submit").onclick = function() {
+      setStorage(score, document.getElementById("name").value)
+      canvas.hidden = false
+      document.getElementById("highscore").hidden = true
+      can_restart = true
+      location.reload()
+    }
+  }
+
   function newBlock() {
     const types = Object.keys(blocks);
     const type = types[Math.floor(Math.random() * types.length)];
