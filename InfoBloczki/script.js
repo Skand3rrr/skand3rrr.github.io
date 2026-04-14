@@ -94,6 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let can_restart = true;
   const SCORE_KEYS = ["_s1", "_s2", "_s3"];
   let currentBlock;
+  let beg_questions = 0;
 
   window.addEventListener("keydown", (e) => {
     if ((e.key == " " || e.code == "Space") && !running && can_restart) {
@@ -331,7 +332,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let C = document.getElementById("c");
     let D = document.getElementById("d");
 
-    let num = Math.floor(Math.random() * (Object.keys(json).length - 0));
+    if (beg_questions > 19) {
+      let num = Math.floor(Math.random() * (Object.keys(json).length - 0));
+    } else {
+      num = beg_questions;
+    }
 
     A.innerHTML = json[num].A;
     B.innerHTML = json[num].B;
@@ -374,10 +379,12 @@ document.addEventListener("DOMContentLoaded", () => {
   function Correct() {
     answering = false;
     score += 100;
+    beg_questions += 1;
     document.getElementById("questionbox").hidden = true;
   }
   function Wrong() {
     answering = false;
+    beg_questions += 1;
     document.getElementById("questionbox").hidden = true;
   }
 });
