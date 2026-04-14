@@ -380,7 +380,7 @@ document.addEventListener("DOMContentLoaded", () => {
     answering = false;
     score += 100;
     beg_questions += 1;
-    if (beg_questions > 19) {
+    if (beg_questions < 19) {
       document.getElementById("nr").innerHTML = "Pytanie nr. " + (beg_questions + 1);
     } else {
       document.getElementById("nr").innerHTML = "Tryb nieskończony";
@@ -391,7 +391,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function Wrong() {
     answering = false;
     beg_questions += 1;
-    if (beg_questions > 19) {
+    if (beg_questions < 19) {
       document.getElementById("nr").innerHTML = "Pytanie nr. " + (beg_questions + 1);
     } else {
       document.getElementById("nr").innerHTML = "Tryb nieskończony";
