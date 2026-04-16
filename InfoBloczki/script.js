@@ -325,6 +325,7 @@ document.addEventListener("DOMContentLoaded", () => {
     answering = true;
 
     document.getElementById("questionbox").hidden = false;
+    document.getElementById("nr").hidden = false;
     let questiontext = document.getElementById("question");
 
     let A = document.getElementById("a");
@@ -382,17 +383,19 @@ document.addEventListener("DOMContentLoaded", () => {
     beg_questions += 1;
     if (beg_questions < 19) {
       document.getElementById("nr").innerHTML = "Pytanie nr. " + (beg_questions + 1);
+      document.getElementById("nr").hidden = true;
     } else {
       document.getElementById("nr").innerHTML = "Tryb nieskończony";
     }
-    
     document.getElementById("questionbox").hidden = true;
+    
   }
   function Wrong() {
     answering = false;
     beg_questions += 1;
     if (beg_questions < 19) {
       document.getElementById("nr").innerHTML = "Pytanie nr. " + (beg_questions + 1);
+      document.getElementById("nr").hidden = true;
     } else {
       document.getElementById("nr").innerHTML = "Tryb nieskończony";
     }
